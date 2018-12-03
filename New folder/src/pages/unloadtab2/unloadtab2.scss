@@ -1,0 +1,110 @@
+page-unloadtab2 {
+    .content-md
+    {        background-color: rgb(80, 78, 78) !important;  
+      }
+  
+  .accordion-list {
+      background: color($colors, light);
+      height: 100%;
+    }
+    .section {
+      background: rgb(28, 28, 29);
+      color:white;
+      margin-bottom: 4px;
+    }
+    .section-active {
+      background: rgb(28, 28, 29);
+      color: #fff;
+    }
+    
+    .child {
+      background: rgb(28, 28, 29);
+      color:white;
+      margin-bottom: 4px; 
+    }
+    .child-item {
+      background: rgb(28, 28, 29);
+      padding: 10px;
+    }
+    .label {
+      margin: 0px;
+    }
+    .list {
+      margin-bottom: 4px;
+    }
+  
+    .item, .item.item .item-inner {
+      border: 0;
+      padding-left: 2px;
+      padding-right: 0px;
+      background: rgb(28, 28, 29);
+    }
+  
+    .accordion-list {
+      background: #0000;
+      height: 100%;
+  }
+  
+  // .item-cover {
+  //   left: 0;
+  //   top: 0;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgb(28, 28, 29);
+  //   cursor: pointer;
+  // }
+  
+  .item-ios-dark, .item-divider-ios-dark {
+    color: #fff;
+    background: rgb(28, 28, 29);
+  }
+   
+  
+  
+    .content-md{
+        background-color: rgb(80, 78, 78) !important;
+    }
+  
+    
+  
+    .searchbar-md .searchbar-input {
+        background: linear-gradient(to bottom right, #5c5f5f, #5c5f5f);
+        //background-color: #009196;
+        padding-left: 9px !important;
+        color: rgb(245, 240, 240);
+           
+  
+      }
+      
+  
+      #home-search {
+        width: 100%;
+        height:10%;
+        color:white;
+        margin: auto;
+    }
+  
+  
+    .searchbar-search-icon {
+        display:none; 
+        width:0;
+        height:0;  
+    }
+  
+    h1,h2,h3,p{
+        font-weight: 100px;
+        color: aliceblue;
+    }
+  
+  
+  ion-list{
+     padding-left:0px;
+   padding-right:0px;
+  }
+  ion-input{
+    padding-left: 0px;
+  
+  }
+  
+}

@@ -1,0 +1,130 @@
+
+<ion-header>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-header>
+  <ion-navbar color="dark">
+      <ion-title *ngIf="!isOn">
+          <button ion-button menuToggle="left" start>
+          <ion-icon name="menu"></ion-icon>Home
+        </button></ion-title>
+        <div id="search" class="search-button-star">
+      <ion-searchbar *ngIf="isOn" (ionInput)="getItems($event)" (ionCancel)="onCancel($event)" animated="true"></ion-searchbar>
+    </div>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="toggleDetails()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+    </ion-buttons>
+
+    <button ion-button menuToggle="right" end>
+        <ion-icon name="menu"></ion-icon> 
+     </button>
+     
+  </ion-navbar>
+
+</ion-header>
+
+
+  <ion-content  color="dark" text-left>
+    
+    <ion-list color="dark" class="accordion-list">
+        <ion-list-header *ngFor="let item of information; let i = index">
+          <ion-item padding-left=0 ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+          <ion-icon item-left name="md-arrow-dropright" *ngIf="!item.open"></ion-icon>
+          <ion-icon item-left name="md-arrow-dropdown" *ngIf="item.open"></ion-icon>
+          {{arr1[i]}}
+          <ion-icon name="print" item-right *ngIf="i==0"></ion-icon>
+          <ion-icon name="camera" item-right *ngIf="i==0"></ion-icon>
+        </ion-item>
+  
+        <ion-item *ngIf="item.children && item.open" no-lines>
+          
+  
+          <ion-list-header *ngFor="let child of item.children; let j = index">
+          
+            <button ion-item (click)="toggleItem(i, j)" *ngIf="child.children" class="child" detail-none>
+              <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
+              <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
+          
+            </button>
+  
+          
+            <ion-item *ngIf="!child.children" ion-item detail-none class="child-item">
+          
+              <ion-item color="dark" *ngIf="child.type=='text'" text-left>
+                  <ion-input class="ion_input1" color="dark" type="text" placeholder="{{child.name}}" text-left></ion-input>
+          
+            </ion-item>
+  
+  
+            <ion-item color="dark" *ngIf="child.type=='date'" text-left>
+                
+                <ion-input  color="dark" type="date" placeholder="{{child.name}}" text-left></ion-input>
+            
+          </ion-item>
+  
+            <ion-item color="dark" *ngIf="child.type=='select'">
+             <!-- <ion-input  class ="ionic1" placeholder="{{child.name}}"></ion-input> -->
+                <ion-select  placeholder="{{child.name}}   &nbsp;&nbsp;&nbsp;&nbsp;" interface="popover">
+                    <ion-option  *ngFor="let val of child.values; let x=index"  value="val[x]" text-left>{{val}}</ion-option>
+                </ion-select>
+          </ion-item>
+  
+  
+          <!-- <ion-item class="secondry-content">
+              <ion-label stacked>Product Type</ion-label>
+               <ion-input type="email"  placeholder="Clean Oil"></ion-input> 
+              <ion-select  placeholder="Clean Oil" interface="popover" [(ngModel)]="p">
+                  <ion-option value="Clean Oil">Clean Oil</ion-option>
+                  <ion-option value="20">20</ion-option>
+              </ion-select>
+            </ion-item> -->
+  
+  
+  
+  
+  
+  
+          <ion-item color="dark" *ngIf="child.type=='checkbox'">
+  
+  
+            <!-- <ion-label>{{child.name}}
+  
+            </ion-label> -->
+            <ion-checkbox [(ngModel)]="child.name"  text-area="item-right" >{{child.name}}</ion-checkbox> 
+  
+          </ion-item>
+            </ion-item>
+            <ion-list *ngIf="child.children && child.open">
+  
+              <ion-item *ngFor="let item of child.children; let k = index" detail-none class="child-item" text-wrap>
+                <h2>{{ item.name }}</h2>
+                <p text-lowercase>{{ item.information }}</p>
+      
+              </ion-item>
+            </ion-list>
+  
+          </ion-list-header>
+        </ion-item>
+  
+      </ion-list-header>
+    </ion-list>
+  
+  
+  
+    <!-- <ion-item class="secondry-content">
+        <ion-label stacked>Product Type</ion-label>
+         <ion-input type="email"  placeholder="Clean Oil"></ion-input> 
+        <ion-select  placeholder="Clean Oil" interface="popover" [(ngModel)]="p">
+            <ion-option value="Clean Oil">Clean Oil</ion-option>
+            <ion-option value="20">20</ion-option>
+        </ion-select>
+      </ion-item> -->
+  </ion-content>

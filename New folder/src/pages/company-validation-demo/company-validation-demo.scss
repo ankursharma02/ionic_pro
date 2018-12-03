@@ -1,0 +1,173 @@
+//  page-home {
+//     // .scroll-content {
+//     //     background: url('../assets/imgs/Login_Screen_Background.svg');
+    
+       
+    
+//     //   }
+      
+   
+.button.customBtn{
+    //   width:200px;
+    //  // margin-left:50%;
+    //   margin-left: 17%;
+    //   padding-left: 100px;
+    //   padding-right:100px;
+    
+    width: 180px;
+    margin-left: 18%;
+    }
+    
+    
+    // img {
+    //   margin-top:30px;
+    //   width: 100px;
+    // }
+    
+         ion-img{
+                height: 40vh;
+                width: auto;
+                margin: auto;
+                display: block;
+             // display: block;
+                background: transparent !important;
+             //  position: absolute;
+               align-items: center;
+             margin-top: 0%;
+             max-width: 100%;
+             max-height: 250%;
+             width: 320px; 
+              padding-top: 140px;
+              
+            // // padding-bottom: 28px;
+            //  align-items:center;
+            //  position: relative; 
+            //  height: 180px; 
+            //   background: transparent !important;
+         }        
+            
+    // //         //  position: absolute;
+    // //         //     top: 0px;
+    // //         //     left: 0px;
+            
+    // //         }
+             .forg_usrnm
+             {
+                  color: wheat;
+            //      text-align: center;
+             //     align-content: center;
+                  
+              //    line-height: 28px;
+    
+    
+    
+    
+              //    font-family: "Roboto Light";
+               //   font-style: normal;
+               //   color: white;
+                  display: block;
+                  text-align: center;
+                  align-content: center;
+               
+             }
+    // //          .errormessage {
+    // //             font-size: 2vw;
+    // //             color: red;
+    // //             position: absolute;
+    // //             top: 0vw;
+    // //             left: 0vw;
+    // //             width: 100%;
+    // //             text-align: center;
+    // //         }
+            
+    // // }
+    
+    // .Background{
+    //     background-color:rgb(59, 57, 57);
+    //     position: relative;
+    //    // color:rgb(59, 57, 57);
+    // }
+    
+    
+    .lab1{
+     // margin-bottom:5%;
+        padding-top: 110px;
+      //  padding-bottom: 0px;
+         color :white;
+         text-align: center;
+      }
+      .userinput{
+      //    //  font-family: "Roboto Light";
+      color: white;
+      padding-left: 56px;
+        padding-right: 79px;
+      border-block-end: #fff;
+      text-align: center;
+        .text-input::-webkit-input-placeholder {
+              text-align: center;
+            //  font-size: 13px;
+            }
+        //    border-inline-end-color: aliceblue;
+            
+               
+        .text-input:-moz-placeholder {
+               text-align: center;
+       }
+           
+      //    //   .text-input::-moz-placeholder {
+      //    //     text-align: center;
+      //    //   }
+           
+         .text-input:-ms-input-placeholder {
+           text-align: center;
+             }
+            }
+      //      font-family: "Roboto Light";
+      //    font-style: normal;
+      //    border-top-width: initial;
+      //    border-right-width: initial;
+      //    border-left-width: initial;
+      //    border-top-color: initial;
+      //    border-right-color: initial;
+      //    border-left-color: initial;
+      //    color: white;
+      //    display: block;
+      //    text-align: center;
+      //    align-content: center;
+      //    width: 100%;
+      //    font-size: 1.5vw;
+      //    border-style: none none solid;
+      //    border-image: initial;
+      //    padding: 0.5vw 0vw;
+      //    margin: 1vw 0vw;
+      //    border-bottom: 0.1vw solid rgb(117, 117, 117);
+      //    background: none;
+           
+      // }
+      .Background {
+      //  background-color: #3b3939;
+        position: absolute;
+     //   color: #ffff;
+    }
+    .content-md {
+      color: #488aff;
+     // background-color: #fff;
+      background-color: rgb(80, 78, 78) !important;
+    }
+    .button-full-ios {
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 0;
+      height: 015px;
+      border-right-width: 0;
+      border-left-width: 0;
+    }
+    
+    .toolbar-title-md {
+      padding: 0 12px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #424242;
+    }
+
+    

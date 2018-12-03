@@ -1,0 +1,149 @@
+{
+    "items": [
+            {
+            "name": "Load_Type",
+            "children": [
+                {
+                    "name": "Load Type...",
+                    "type":"select",
+                    "values": ["load1","load2"]
+                },
+                {
+                    "name": "Company Name",
+                    "type": "text"
+                    
+                },
+		        {
+                    "name": "Consigner",
+                    "type": "text"
+                    
+                },
+                {
+                    "name": "Location",
+                    "type": "text"
+                    
+                },
+
+		 
+		        {
+                    "name": "Dangerous Goods",
+                    "type": "select",
+                    "values": ["dan1","dan2"]
+                },
+		         {
+                    "name": "Take Selcetion",
+                    "type": "select",
+		            "values": ["tak1","tak2"]
+                    
+                },
+		        {
+                    "name": "Ticket Type",
+                    "type": "select",
+		             "values": ["ticket1","ticket2"]
+                    
+                },
+	        	{
+                    "name": "Product Type",
+                    "type": "select",
+		            "values": ["Pro1","Pro2"]
+                    
+                },
+		        {
+                    "name": "Arrival Time",
+                    "type": "date"
+		   
+                    
+                },
+		        {
+                    "name": "Start time",
+                    "type": "date"
+		   
+                    
+                },
+		        {
+                    "name": "Start Gauge",
+                    "type": "text"
+		   
+                    
+                },
+		        {
+                    "name": "Finish Gauge",
+                    "type": "text"
+		   
+                    
+                },
+	        	{
+                    "name": "Est. Volume",
+                    "type": "text"
+		   
+                    
+                },
+		        {
+                    "name": "Free Water",
+                    "type": "text"
+		   
+                    
+                },
+		        {
+                    "name": "Finish Time",
+                    "type": "date"
+		   
+                    
+                },
+		        {
+                    "name": "Departure Time",
+                    "type": "date"  
+		   
+                    
+                },
+		        {
+                    "name": "Comments...",
+		             "type":"textarea"	
+                    
+                }
+
+            ]
+        },
+        {
+            "name": "Safety",
+            "children": [
+                {
+                    "name": "Hoses, fittings in good working order",
+		            "type":"checkbox"	
+                    
+                },
+		        {
+                    "name": "Ensure trailer dump valve/drip tray is closed",
+		            "type":"checkbox"	
+                    
+                },
+		        {
+                    "name": "Strictly monitor trailer volume recording system",
+		            "type":"checkbox"	
+                    
+                },
+		        {
+                    "name": "Trailer vent line closed before exiting lease ",
+		            "type":"checkbox"	
+                    
+                },
+		        {
+                    "name": "Tank valves, bull plugs secure and in place after loading ",
+		            "type":"checkbox"	
+                    
+                },
+		        {
+                    "name": "Driver's signature...",
+		            "type":"select"	
+                    
+                },
+	        	{
+                    "name": "Comments...",
+		             "type":"textarea"	
+                    
+                }
+
+               ]
+        }      
+    ]
+}

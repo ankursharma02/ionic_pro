@@ -1,0 +1,36 @@
+
+<ion-header>
+  <ion-toolbar  padding:0 color="dark">
+  <ion-title text-end>
+ Create Account
+  </ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content  class = "Background">    
+<div text-center>
+      <ion-img  src="assets/imgs/Login_Screen_AlThing_Logo.svg">
+      </ion-img>
+          
+      
+       <p class="lab1" >Please enter your Company name</p> 
+  
+       <!-- <ion-label floating text-center>Company Name</ion-label>
+       <ion-input type="text"></ion-input> -->
+      <ion-input class="userinput"  color="primary" [(ngModel)]="name1"  type="text" placeholder="Company Name..." outline></ion-input>
+      
+     <!-- <ion-item class="row responsive-md">
+        <ion-input class="userinput"  color="primary" type="password"></ion-input>
+      </ion-item> -->
+      
+      <button ion-button full class="button button-dark customBtn"  (click)="demo1()">
+       NEXT
+      </button><br/>
+      <a class="forg_usrnm">Forgot Your Password ?</a>   
+   
+ 
+    </div>
+  
+  
+</ion-content>
+  
+ 
